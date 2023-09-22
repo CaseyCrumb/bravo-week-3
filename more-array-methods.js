@@ -32,18 +32,25 @@ let names = ["Cody", "Casey", "Clayton", "Kara", "Hope"];
 
 
 //isPalindrome
-const isPalindrome = string => string.replaceAll(' ', '') === string.replaceAll(' ', '').split('').reverse().join('');
+// const isPalindrome = string => string.replaceAll(' ', '') === string.replaceAll(' ', '').split('').reverse().join('');
 
-let myString = "a man a plan a canal panama";
-let myStringSplit = myString.split(''); //splits string at every character and returns them in an array
-console.log("myStringSplit before reverse", myStringSplit);
+// let myString = "a man a plan a canal panama";
+// let myStringSplit = myString.split(''); //splits string at every character and returns them in an array
+// console.log("myStringSplit before reverse", myStringSplit);
 
 
-let myStringSplitReverse = myStringSplit.reverse();
-console.log(myStringSplitReverse);
-console.log("myStringSplit post reverse", myStringSplit);
+// let myStringSplitReverse = myStringSplit.reverse();
+// console.log(myStringSplitReverse);
+// console.log("myStringSplit post reverse", myStringSplit);
 
-let myStringSplitReverseJoin = myStringSplitReverse.join('');
-console.log(myStringSplitReverseJoin);
+// let myStringSplitReverseJoin = myStringSplitReverse.join('');
+// console.log(myStringSplitReverseJoin);
 
-console.log(isPalindrome("a man a plan a canal panama"));
+// console.log(isPalindrome("a man a plan a canal panama"));
+let words = ['apple', 'banana', 'cherry', 'bob', 'cheese', 'cat', 'pickle']
+//output: ['Apple', 'Banana', 'Cherry']
+ function capitalize(words) {
+    return words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+ }
+
+ console.log(capitalize(words));
