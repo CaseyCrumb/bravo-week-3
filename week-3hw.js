@@ -216,11 +216,11 @@ const {
     security:{
         encryption: encription, 
         apiKey: key
-        }, 
+    }, 
     credentials:{
         userName: user, 
         password: pw
-    }
+    },
 } = config;
 
 console.log(app, port, key, encription, user, pw);
