@@ -197,7 +197,8 @@ const averageGrade = (grade.math + grade.science + grade.english) / 3;
 //object destructuring to extract appName, port, encryption, apiKey, username, 
 //and password into variables.
 
-let config = {appName: 'testApp',
+let config = {
+              appName: 'testApp',
               port: 40,
               security:{
                 encryption: "123",
@@ -209,7 +210,18 @@ let config = {appName: 'testApp',
               },
 };
 
-const {appName: app, port: port, security:{encryption: encription, apiKey: key}, credentials:{userName: user, password: pw}} = config;
+const {
+    appName: app, 
+    port: port, 
+    security:{
+        encryption: encription, 
+        apiKey: key
+        }, 
+    credentials:{
+        userName: user, 
+        password: pw
+    }
+} = config;
 
 console.log(app, port, key, encription, user, pw);
 console.log(config);
