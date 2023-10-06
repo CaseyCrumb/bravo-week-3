@@ -223,7 +223,8 @@ const {
     },
 } = config;
 
-console.log(app, port, key, encription, user, pw);
-console.log(config);
+//console.log(app, port, key, encription, user, pw);
+//console.log(config);
 
 //your code here//
+
